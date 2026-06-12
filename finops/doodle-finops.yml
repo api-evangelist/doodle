@@ -1,0 +1,77 @@
+specification: FinOps Framework 1.0
+focus: FOCUS-aligned
+provider: Doodle
+providerId: doodle
+created: 2026-06-12
+modified: 2026-06-12
+billingModel: subscription
+description: >
+  Doodle operates on a freemium subscription model with per-user/per-seat pricing
+  for paid tiers. Billing is flat-rate per seat with annual and monthly commitment
+  options; annual billing provides significant discount. There is no usage-based
+  API metering as the public API has been deprecated. Cost predictability is high
+  for subscription tiers.
+focusColumns:
+  - name: BilledCost
+    description: Flat monthly or annual subscription fee per user seat
+  - name: EffectiveCost
+    description: Annualized cost per seat; lower with annual commitment
+  - name: ListUnitPrice
+    description: Published per-user per-month price for each plan tier
+  - name: BillingPeriod
+    description: Monthly or annual billing cycle
+  - name: SkuId
+    description: Plan tier identifier (free, professional, team, enterprise)
+  - name: ServiceName
+    description: Doodle Scheduling Platform
+  - name: ServiceCategory
+    description: Productivity / Scheduling
+meters:
+  - name: Professional Seat (Annual)
+    unit: user/month
+    price: 6.95
+    currency: USD
+    description: Professional plan billed annually at $83.40/year per user
+  - name: Professional Seat (Monthly)
+    unit: user/month
+    price: 14.95
+    currency: USD
+    description: Professional plan billed monthly, no commitment
+  - name: Team Seat (Annual)
+    unit: user/month
+    price: 8.95
+    currency: USD
+    description: Team plan billed annually; minimum 2 users
+  - name: Team Seat (Monthly)
+    unit: user/month
+    price: 19.95
+    currency: USD
+    description: Team plan billed monthly per user; minimum 2 users
+  - name: Enterprise Seat
+    unit: user/month
+    price: null
+    currency: USD
+    description: Custom enterprise pricing negotiated with sales
+principles:
+  - name: Cost Visibility
+    description: >
+      Subscription costs are fully predictable with fixed per-seat pricing.
+      Annual vs. monthly commitment choice is the primary cost optimization lever.
+  - name: Cost Optimization
+    description: >
+      Annual billing at $6.95/user/month (Professional) versus $14.95/month saves
+      over 50% versus month-to-month. Teams should evaluate seat utilization before
+      committing annually.
+  - name: Cost Allocation
+    description: >
+      Per-seat billing enables straightforward cost allocation to individual
+      users or cost centers. Enterprise plans support custom terms enabling
+      departmental or project-based allocation.
+  - name: Benchmarking
+    description: >
+      No API usage meters exist for benchmarking consumption-based costs.
+      Primary benchmarking metric is active seats vs. engaged users.
+  - name: Anomaly Detection
+    description: >
+      Main cost anomaly risk is seat over-provisioning. Monitor active user
+      count against licensed seats to avoid paying for unused licenses.

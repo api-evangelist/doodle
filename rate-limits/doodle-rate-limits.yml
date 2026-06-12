@@ -1,0 +1,58 @@
+specification: API Commons Rate Limits 0.1
+provider: Doodle
+providerId: doodle
+created: 2026-06-12
+modified: 2026-06-12
+notes: >
+  Doodle's public REST API has been officially deprecated and no longer supports
+  new API integrations. Official public rate limit documentation was never
+  published. The following reflects known characteristics based on the legacy
+  API implementation and general platform behavior. Enterprise customers with
+  existing API access should contact support@doodle.com for current details.
+limits:
+  - name: API Availability
+    type: boolean
+    value: false
+    description: >
+      Doodle has officially deprecated its public API and no longer accepts
+      new API integrations. Existing enterprise integrations may still be
+      operational; contact support for guidance.
+  - name: HTTP Rate Limiting Status Code
+    type: status
+    value: 429
+    description: Too Many Requests returned when rate limits are exceeded
+  - name: Retry-After Header
+    type: boolean
+    value: true
+    description: >
+      Standard HTTP Retry-After header expected on 429 responses indicating
+      when the client may retry
+  - name: Zapier Trigger Rate
+    type: quota
+    limit: null
+    unit: triggers/hour
+    description: >
+      Zapier integration triggers are subject to Zapier's own polling and
+      task limits based on the user's Zapier plan. Doodle's Zapier integration
+      is available on Professional plan and above.
+  - name: Platform Throttling
+    type: boolean
+    value: true
+    description: >
+      Platform-level throttling is applied to protect service availability.
+      Specific numeric thresholds are not publicly documented.
+headers:
+  - name: Retry-After
+    description: Seconds to wait before retrying after a 429 response
+    required: false
+  - name: X-RateLimit-Limit
+    description: Total allowed requests in the current window (not officially documented)
+    required: false
+  - name: X-RateLimit-Remaining
+    description: Remaining requests in the current window (not officially documented)
+    required: false
+throttling:
+  statusCode: 429
+  description: >
+    HTTP 429 Too Many Requests is the standard response for throttled
+    API calls. Callers should implement exponential backoff.

@@ -1,0 +1,141 @@
+specification: API Commons Plans 0.1
+provider: Doodle
+providerId: doodle
+created: 2026-06-12
+modified: 2026-06-12
+reconciled: true
+type: freemium
+url: https://doodle.com/en/premium/
+plans:
+  - name: Free
+    type: free
+    description: >
+      Forever free plan for individuals with basic scheduling capabilities
+      including group polls, one booking page, and sign-up sheets. Ads are
+      shown to invitees and Zapier integration is not available.
+    price: 0
+    currency: USD
+    billingPeriod: monthly
+    quotas:
+      - name: Group Polls
+        type: quota
+        limit: 10
+        unit: polls
+        description: Up to 10 active poll slots
+      - name: Booking Pages
+        type: quota
+        limit: 1
+        unit: pages
+        description: One booking page allowed
+      - name: Reminders
+        type: boolean
+        value: false
+        description: Automated reminders not available on free plan
+      - name: Zapier Integration
+        type: boolean
+        value: false
+        description: Zapier automation not available on free plan
+      - name: Custom Branding
+        type: boolean
+        value: false
+        description: Custom branding not available on free plan
+      - name: Ads
+        type: boolean
+        value: true
+        description: Doodle ads shown to invitees
+  - name: Professional
+    type: paid
+    description: >
+      Full-featured individual plan removing ads for invitees, providing
+      unlimited polls and booking pages, custom branding, calendar sync,
+      and Zapier integration for workflow automation.
+    price: 6.95
+    currency: USD
+    billingPeriod: monthly
+    billingNote: "$6.95/month billed annually ($83.40/yr); $14.95/month billed monthly"
+    quotas:
+      - name: Group Polls
+        type: quota
+        limit: -1
+        unit: polls
+        description: Unlimited active polls
+      - name: Booking Pages
+        type: quota
+        limit: -1
+        unit: pages
+        description: Unlimited booking pages
+      - name: Reminders
+        type: boolean
+        value: true
+        description: Automated reminders available
+      - name: Zapier Integration
+        type: boolean
+        value: true
+        description: Zapier automation available
+      - name: Custom Branding
+        type: boolean
+        value: true
+        description: Custom branding on polls and booking pages
+      - name: Ads
+        type: boolean
+        value: false
+        description: No ads shown to invitees
+      - name: Calendar Sync
+        type: boolean
+        value: true
+        description: Sync with Google Calendar, Outlook, iCal
+  - name: Team
+    type: paid
+    description: >
+      Team plan for 2-100 users with shared booking pages, admin controls,
+      roles and permissions, activity reports, and all Professional features.
+    price: 8.95
+    currency: USD
+    billingPeriod: monthly
+    billingNote: "$8.95/user/month billed annually; $19.95/user/month billed monthly. Minimum 2 users."
+    quotas:
+      - name: Users
+        type: quota
+        limit: 100
+        unit: users
+        description: Minimum 2 users, maximum 100 users
+      - name: Shared Booking Pages
+        type: boolean
+        value: true
+        description: Shared booking pages with team admin controls
+      - name: Admin Console
+        type: boolean
+        value: true
+        description: Admin console with roles and permissions management
+      - name: Activity Reports
+        type: boolean
+        value: true
+        description: Activity and usage reports available
+  - name: Enterprise
+    type: enterprise
+    description: >
+      Enterprise plan with custom pricing, SSO, 99.9% SLA, dedicated onboarding,
+      priority support, and custom terms. Includes all Team features plus
+      enterprise-grade security and compliance.
+    price: 0
+    currency: USD
+    billingPeriod: custom
+    billingNote: Custom pricing negotiated directly with Doodle sales team
+    quotas:
+      - name: SSO
+        type: boolean
+        value: true
+        description: Single Sign-On (SSO) support
+      - name: SLA
+        type: metered
+        limit: 99.9
+        unit: percent uptime
+        description: 99.9% availability SLA
+      - name: Priority Support
+        type: boolean
+        value: true
+        description: Priority customer support
+      - name: Dedicated Onboarding
+        type: boolean
+        value: true
+        description: Dedicated onboarding and training

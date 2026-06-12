@@ -1,0 +1,70 @@
+aid: doodle
+name: Doodle
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+url: https://raw.githubusercontent.com/api-evangelist/doodle/refs/heads/main/apis.yml
+created: 2026-06-12
+modified: 2026-06-12
+specificationVersion: "0.19"
+description: >
+  Doodle is a meeting scheduling platform that simplifies group coordination through
+  polls, booking pages, 1:1 meeting links, and sign-up sheets. The platform automatically
+  finds optimal meeting times by reading participant calendars and supports cross-timezone
+  scheduling for distributed teams. Doodle integrates with Google Calendar, Microsoft
+  Office 365, Zoom, Microsoft Teams, Google Meet, Webex, Stripe, and Zapier for
+  workflow automation. The legacy public REST API has been officially deprecated and
+  Doodle no longer supports new API integrations; enterprise customers with existing
+  API implementations may contact support for continued assistance. Automation is
+  now primarily available via Zapier on Professional and higher plans.
+tags:
+  - Scheduling
+  - Meetings
+  - Calendar
+  - Group Polls
+  - Booking Pages
+  - Time Management
+  - Productivity
+apis:
+  - name: Doodle Scheduling API (Deprecated)
+    description: >
+      The Doodle REST API for programmatically creating and managing group polls,
+      booking pages, and meeting scheduling. This API has been deprecated and Doodle
+      no longer supports new API integrations. Enterprise customers with existing
+      implementations should contact support@doodle.com.
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://help.doodle.com/en/articles/9457023-doodle-api-deprecation
+    baseURL: https://doodle.com
+    tags:
+      - Scheduling
+      - Meetings
+      - Group Polls
+      - Booking Pages
+    properties:
+      - type: Documentation
+        url: https://help.doodle.com/en/articles/9457023-doodle-api-deprecation
+common:
+  - type: Website
+    url: https://doodle.com
+  - type: Documentation
+    url: https://help.doodle.com
+  - type: Blog
+    url: https://doodle.com/en/resources/
+  - type: Pricing
+    url: https://doodle.com/en/premium/
+  - type: StatusPage
+    url: https://uptime.doodle.com
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/doodle-ag/
+  - type: X
+    url: https://x.com/doodletweet
+  - type: Integrations
+    url: https://doodle.com/en/integrations/
+  - type: Plans
+    url: plans/doodle-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/doodle-rate-limits.yml
+  - type: FinOps
+    url: finops/doodle-finops.yml
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
