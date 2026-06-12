@@ -1,0 +1,9 @@
+{
+  "name": "Doodle Blog",
+  "description": "Resources and blog posts from Doodle, the meeting scheduling platform.",
+  "url": "https://doodle.com/en/resources/",
+  "rssUrl": null,
+  "rssConfirmed": false,
+  "notes": "No RSS feed URL found on Doodle resources page. Blog content is available at https://doodle.com/en/resources/ but no machine-readable feed was discoverable.",
+  "posts": []
+}

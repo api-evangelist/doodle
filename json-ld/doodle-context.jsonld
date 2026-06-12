@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "doodle": "https://doodle.com/",
+    "aid": "https://apis.io/",
+    "name": "schema:name",
+    "description": "schema:description",
+    "url": "schema:url",
+    "logo": "schema:logo",
+    "sameAs": "schema:sameAs",
+    "provider": "schema:provider",
+    "offers": "schema:offers",
+    "SoftwareApplication": "schema:SoftwareApplication",
+    "WebAPI": "schema:WebAPI",
+    "documentation": "schema:documentation",
+    "termsOfService": "schema:termsOfService",
+    "category": "schema:applicationCategory",
+    "operatingSystem": "schema:operatingSystem",
+    "featureList": "schema:featureList",
+    "schedulingPoll": "doodle:poll",
+    "bookingPage": "doodle:bookingPage",
+    "oneOnOne": "doodle:oneOnOne",
+    "signUpSheet": "doodle:signUpSheet",
+    "calendarIntegration": "doodle:calendarIntegration"
+  },
+  "@type": "SoftwareApplication",
+  "@id": "https://doodle.com",
+  "name": "Doodle",
+  "description": "Doodle is a meeting scheduling platform that simplifies group coordination through polls, booking pages, 1:1 meeting links, and sign-up sheets.",
+  "url": "https://doodle.com",
+  "logo": "https://doodle.com/favicon.ico",
+  "category": "BusinessApplication",
+  "featureList": [
+    "Group scheduling polls",
+    "Booking pages",
+    "1:1 meeting links",
+    "Sign-up sheets",
+    "Cross-timezone scheduling",
+    "Calendar integration (Google, Office 365)",
+    "Video conferencing integration (Zoom, Teams, Meet, Webex)",
+    "Zapier automation"
+  ],
+  "sameAs": [
+    "https://www.linkedin.com/company/doodle-ag/",
+    "https://x.com/doodletweet"
+  ],
+  "provider": {
+    "@type": "Organization",
+    "name": "Doodle AG",
+    "url": "https://doodle.com"
+  },
+  "offers": {
+    "@type": "Offer",
+    "url": "https://doodle.com/en/premium/"
+  }
+}
