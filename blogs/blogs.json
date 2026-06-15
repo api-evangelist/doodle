@@ -5,5 +5,17 @@
   "rssUrl": null,
   "rssConfirmed": false,
   "notes": "No RSS feed URL found on Doodle resources page. Blog content is available at https://doodle.com/en/resources/ but no machine-readable feed was discoverable.",
-  "posts": []
+  "posts": [],
+  "repo": "doodle",
+  "feeds": [
+    {
+      "source": "https://help.doodle.com",
+      "feed_url": "https://help.doodle.com",
+      "title": "",
+      "saved": 0,
+      "method": "none"
+    }
+  ],
+  "post_count": 0,
+  "fetched": "2026-06-14T20:42:17Z"
 }
