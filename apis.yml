@@ -1,7 +1,7 @@
 aid: doodle
 name: Doodle
 type: Index
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 url: https://raw.githubusercontent.com/api-evangelist/doodle/refs/heads/main/apis.yml
 created: 2026-06-12
 modified: 2026-06-12
@@ -31,7 +31,7 @@ apis:
       booking pages, and meeting scheduling. This API has been deprecated and Doodle
       no longer supports new API integrations. Enterprise customers with existing
       implementations should contact support@doodle.com.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://help.doodle.com/en/articles/9457023-doodle-api-deprecation
     baseURL: https://doodle.com
     tags:
