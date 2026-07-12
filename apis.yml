@@ -43,6 +43,10 @@ apis:
       - type: Documentation
         url: https://help.doodle.com/en/articles/9457023-doodle-api-deprecation
 common:
+  - type: TrustCenter
+    url: security/doodle-trust-center.yml
+  - type: DomainSecurity
+    url: security/doodle-domain-security.yml
   - type: Website
     url: https://doodle.com
   - type: Documentation
