@@ -17,7 +17,7 @@ image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/doodle.png
 url: https://raw.githubusercontent.com/api-evangelist/doodle/refs/heads/main/apis.yml
 created: 2026-06-12
 modified: 2026-06-12
-specificationVersion: "0.19"
+specificationVersion: '0.23'
 description: >
   Doodle is a meeting scheduling platform that simplifies group coordination through
   polls, booking pages, 1:1 meeting links, and sign-up sheets. The platform automatically
