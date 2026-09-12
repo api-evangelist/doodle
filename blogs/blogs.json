@@ -2,26 +2,22 @@
   "repo": "doodle",
   "feeds": [
     {
-      "source": "https://help.doodle.com/feed.xml",
-      "feed_url": "https://help.doodle.com/feed.xml",
-      "title": "",
-      "saved": 0,
-      "method": "feed",
-      "nature": "undetermined",
-      "nature_basis": null
-    },
-    {
       "source": "https://help.doodle.com",
       "feed_url": "https://help.doodle.com/feed.xml",
       "title": "",
       "saved": 0,
-      "method": "discovered",
-      "nature": "undetermined",
-      "nature_basis": null
+      "method": "discovered"
+    },
+    {
+      "source": "https://help.doodle.com/feed.xml",
+      "feed_url": "https://help.doodle.com/feed.xml",
+      "title": "",
+      "saved": 0,
+      "method": "feed"
     }
   ],
-  "post_count": 31,
-  "fetched": "2026-08-30T22:33:40Z",
+  "post_count": 32,
+  "fetched": "2026-09-06T19:17:18Z",
   "agent_pulled": "2026-07-04",
   "feed_nature": "undetermined",
   "feed_nature_basis": null,
