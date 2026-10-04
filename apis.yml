@@ -56,7 +56,6 @@ apis:
       implementations should contact support@doodle.com.
     image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://help.doodle.com/en/articles/9457023-doodle-api-deprecation
-    baseURL: https://doodle.com
     tags:
       - Scheduling
       - Meetings
